@@ -188,7 +188,7 @@ class EdgeCluster():
         
         # For each cycle
         for c in range(cycles):
-            print 'Cycle {0}'.format(c)
+            print('Cycle {0}'.format(c))
             # New number of subdivision points 
             current_num = self.EP
             currentindeces = []
@@ -276,7 +276,7 @@ class EdgeCluster():
 
 # Start
 t_start = datetime.now()
-print '{0}: Bundling edges (JS)'.format(t_start)
+print('{0}: Bundling edges (JS)'.format(t_start))
 progress.setText('Initialising...')
 
 # Parameter
@@ -342,8 +342,8 @@ del writer
 
 # End
 t_end = datetime.now()
-print '{0}: Finished!'.format(t_end)
-print 'Run time: {0}'.format(t_end - t_start)
+print('{0}: Finished!'.format(t_end))
+print('Run time: {0}'.format(t_end - t_start))
 progress.setPercentage(100)
 progress.setText('Finished')
 
